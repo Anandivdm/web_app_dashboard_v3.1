@@ -1,0 +1,101 @@
+/* General */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  color: #676666;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+/* Grid Layout */
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  grid-template-rows: 80px 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main";
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.main {
+  grid-area: main;
+}
+
+/* Colors */
+
+.header {
+  color: white;
+  background-color: #7377BF;
+}
+
+.nav {
+  color: white;
+  background-color: #4D4C72;
+}
+
+/* Layout Header */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.details img {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.profile-pic {
+  border-radius: 15px;
+  margin: 0px 16px;
+}
+
+.notification {
+  padding-right: 16px;
+  border-right: 1px solid #4D4C72;
+}
+
+/* Layout Nav */
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-item  img{
+  width: 30px;
+  height: 30px;
+  padding: 16px 30px;
+  margin: 16px 0px;
+  position: relative;
+  opacity: 0.5;
+}
+
+.nav-item.active  img{
+  opacity: 1;
+  border-left: 6px solid #85DB80;
+}
