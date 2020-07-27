@@ -21,10 +21,18 @@ h3 {
   margin: 0;
 }
 
-.content {
-  padding: 16px;
+.section-heading {
+  padding: 16px 0;
 }
 
+.w-50 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section {
+  padding: 16px;
+}
 /* Grid Layout */
 
 .container {
@@ -198,6 +206,7 @@ h3 {
   background-color: #7377BF;
   border-radius: 5px;
   color: white;
+  margin: 16px;
 }
 
 #alert p {
@@ -213,8 +222,11 @@ h3 {
 
 /* Traffic */
 
+.traffic {
+  border-bottom: 1px solid #DFDFDF;
+}
+
 .traffic .section-heading {
-  padding: 32px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -238,4 +250,8 @@ h3 {
 
 /* Daily Traffic */
 
-
+.daily-traffic, .mobile-users {
+  padding-right: 32px;
+  border-bottom: 1px solid #DFDFDF;
+  border-right: 1px solid #DFDFDF;
+}
