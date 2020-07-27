@@ -255,3 +255,49 @@ h3 {
   border-bottom: 1px solid #DFDFDF;
   border-right: 1px solid #DFDFDF;
 }
+
+/* Social Platforms */
+
+.social-stats {
+  border-bottom: 1px solid #DFDFDF;
+  padding-bottom: 32px;
+}
+
+.platforms {
+  display: flex;
+  flex-direction: row;
+}
+
+.platform {
+  flex-grow: 3;
+  padding: 16px;
+  background-color: #FBFBFB;
+  border: 1px solid #DFDFDF;
+  border-radius: 5px;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.platform p {
+  color: #7377BF;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.platform .social-number {
+  font-size: 32px;
+  font-weight: normal;
+  color: #676666;
+}
+
+.social-icon {
+  padding: 25px;
+  border-radius: 60px;
+  background-color: #7377BF;
+}
+
+.social-description {
+  margin-left: 24px;
+}
