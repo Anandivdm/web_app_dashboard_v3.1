@@ -7,11 +7,12 @@ body {
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 18px;
   font-weight: 400;
 }
 
 h2 {
+  font-size: 16px;
   font-weight: normal;
 }
 
@@ -58,8 +59,25 @@ h3 {
   margin-left: 0px;
   margin-bottom: 12px;
 }
+@media (min-width: 320px) {
+  h1 {
+    font-size: 18px
+  }
+  h2 {
+    font-size: 18px
+  }
+}
 
 @media (min-width: 768px) {
+  h1 {
+    font-size: 26px;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
   .w-50 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -141,17 +159,28 @@ h3 {
 
 .profile-pic {
   border-radius: 15px;
-  margin: 0px 16px;
+  margin: 0px 12px;
 }
 
 .notification {
-  padding-right: 16px;
+  padding-right: 12px;
   transform-origin: 50% 0%;
 }
 
 .divider {
   font-size: 24px;
   color: #4D4C72;
+}
+
+@media (min-width: 768px) {
+  .notification {
+    padding-right: 16px;
+    transform-origin: 50% 0%;
+  }
+  .profile-pic {
+    border-radius: 15px;
+    margin: 0px 16px;
+  }
 }
 
 /* Notification */
@@ -188,9 +217,9 @@ h3 {
 }
 
 .nav-item  img{
-  width: 30px;
+  width: 25px;
   height: 30px;
-  padding: 16px 30px;
+  padding: 17px 25px;
   margin: 16px 0px;
   position: relative;
   opacity: 0.5;
@@ -202,6 +231,7 @@ h3 {
 }
 
 @media (min-width: 768px) {
+
   .nav {
     display: flex;
     flex-direction: column;
@@ -213,6 +243,9 @@ h3 {
     opacity: 1;
     border-bottom: none;
     border-left: 6px solid #85DB80;
+    width: 30px;
+    height: 30px;
+    padding: 16px 30px;
   }
 }
 
@@ -238,13 +271,21 @@ h3 {
 }
 
 .main-search {
-  padding: 12px;
+  padding: 6px;
   background-color: white;
   border-radius: 5px;
   border: 1px solid #DFDFDF;
   float: right;
   margin: 14px;
+  width: 120px;
 
+}
+
+@media (min-width: 768px) {
+  .main-search {
+    padding: 12px;
+    width: 250px;
+  }
 }
 
 /* Alert */
@@ -256,6 +297,11 @@ h3 {
   margin: 16px;
 }
 
+.alert-message {
+  display: flex;
+  flex-direction: row;
+}
+
 #alert p {
   margin: 0px;
   padding: 16px;
@@ -263,7 +309,7 @@ h3 {
 }
 
 #alert .close-button {
-  float: right;
+  margin-left: auto;
   padding: 16px;
 }
 
@@ -275,24 +321,45 @@ h3 {
 
 .traffic .section-heading {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .traffic .filter-options {
   font-size: 12px;
   color: #AAAAAA;
   font-weight: bold;
+  padding: 12px 0;
 }
 
 .traffic .filter-options a {
-  padding: 6px 12px;
+  padding: 6px 6px;
 }
 
 .traffic .filter-options .active {
   background-color: #85DB80;
   border-radius: 20px;
   color: white;
+}
+
+@media (min-width: 320px) {
+  .traffic .filter-options a {
+    padding: 6px 12px;
+  }
+  .traffic .section-heading {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .traffic .section-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .traffic .filter-options {
+    padding: 0px;
+  }
 }
 
 /* Daily Traffic */

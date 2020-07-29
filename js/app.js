@@ -4,8 +4,8 @@ let message = document.getElementById('message');
 let send = document.getElementById('send');
 
 alertMessage.innerHTML =
-`<div>
-  <p><strong>Alert!</strong> How an alert message in this box</p>
+`<div class="alert-message">
+  <p><strong>Alert!</strong> There is an alert message in this box!</p>
   <p class="close-button">x</p>
 </div>`
 
