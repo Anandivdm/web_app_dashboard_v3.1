@@ -7,49 +7,45 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <h1><strong>Your</strong>App &trade;</h1>
-        <div class="details">
-          <img src="icons/icon-bell.svg" alt="icon-bell" width="25" height="25" class="notification">
-          <div class="divider">|</div>
-          <img src="images/member-2.jpg" alt="profile pic" class="profile-pic">
-          <p>Josh Sullivan</p>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1><strong>Your</strong>App &trade;</h1>
+      <div class="details">
+        <img src="icons/icon-bell.svg" alt="icon-bell" width="25" height="25" class="notification">
+        <div class="divider">|</div>
+        <img src="images/member-2.jpg" alt="profile pic" class="profile-pic">
+        <p>Josh Sullivan</p>
+      </div>
+    </div>
+
+    <div class="nav">
+      <div class="nav-item active">
+        <a href="index.html"><img src="icons/icon-dashboard.svg" ></a>
+      </div>
+      <div class="nav-item">
+        <a><img src="icons/icon-members.svg" alt="icobelln-" ></a>
+      </div>
+      <div class="nav-item">
+        <a><img src="icons/icon-visits.svg" alt="icon-bell" ></a>
+      </div>
+      <div class="nav-item">
+        <a><img src="icons/icon-settings.svg" alt="icon-bell"></a>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="tabs">
+        <div class="tab">
+          <h2>Dashboard</h2>
         </div>
+        <input type="search" placeholder="Search" class="main-search">
       </div>
 
-      <div class="nav">
-        <div class="nav-item active">
-          <a href="index.html"><img src="icons/icon-dashboard.svg" ></a>
-        </div>
-        <div class="nav-item">
-          <a><img src="icons/icon-members.svg" alt="icon-bell" ></a>
-        </div>
-        <div class="nav-item">
-          <a><img src="icons/icon-visits.svg" alt="icon-bell" ></a>
-        </div>
-        <div class="nav-item">
-          <a><img src="icons/icon-settings.svg" alt="icon-bell"></a>
-        </div>
-
-      </div>
-
-      <div class="main">
-        <div class="tabs">
-          <div class="tab">
-            <h2>Dashboard</h2>
-          </div>
-          <div class="search">
-        </div>
-      </div>
       <div class="content">
-
-        <div id="alert">
-        </div>
+        <div id="alert"></div>
 
         <div class="dashboard-grid">
-
           <div class="traffic">
             <div class="section">
               <div class="section-heading">
@@ -74,7 +70,6 @@
                 <canvas id="daily-traffic-chart"></canvas>
               </div>
             </div>
-
             <div class="mobile-users">
               <div class="section">
                 <div class="section-heading">
@@ -91,7 +86,6 @@
                 <h3>SOCIAL STATS</h3>
               </div>
               <div class="platforms">
-
                 <div class="platform">
                   <div class="social-icon">
                     <svg id="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 32 25" xml:space="preserve">
@@ -107,7 +101,6 @@
                     <div class="social-number">10,345</div>
                   </div>
                 </div>
-
                 <div class="platform">
                   <div class="social-icon">
                     <svg id="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 10 50 32">
@@ -119,7 +112,6 @@
                     <div class="social-number">8,739</div>
                   </div>
                 </div>
-
                 <div class="platform">
                   <div class="social-icon">
                     <svg  id="google" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 32 32">
@@ -234,11 +226,52 @@
               </div>
             </div>
           </div>
-          <div class="message-users">
-            <h3>MESSAGE USERS</h3>
-          </div>
-          <div class="settings">
-            <h3>SETTINGS</h3>
+          <div class="w-50">
+            <div class="message-users">
+              <div class="section">
+                <div class="section-heading">
+                  <h3>MESSAGE USERS</h3>
+                </div>
+                <form>
+                  <input id="user" type="search" placeholder="Search for User">
+                  <textarea id="message"> </textarea>
+                  <button id="send" class="primary" type="submit">Send</button>
+                </form>
+              </div>
+            </div>
+            <div class="settings">
+              <div class="section">
+                <div class="section-heading">
+                  <h3>SETTINGS</h3>
+                </div>
+                <div class="switch-container">
+                  <p>Send Email Notifications</p>
+                  <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider"></span>
+                  </label>
+                </div>
+                <div class="switch-container">
+                  <p>Set Profile to Public</p>
+                  <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider"></span>
+                  </label>
+                </div>
+                <select id="timezone" name="timezone">
+                  <option disabled selected>Select Timezone</option>
+                      <option value="one">One</option>
+                      <option value="two">Two</option>
+                      <option value="three">Three</option>
+                      <option value="four">Four</option>
+                      <option value="five">Five</option>
+                </select>
+                <div class="w-50">
+                  <button id="save" class="primary">Save</button>
+                  <button id="cancel" class="secondary">Cancel</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
