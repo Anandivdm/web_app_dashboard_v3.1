@@ -11,7 +11,7 @@ alertMessage.innerHTML =
 
 alertMessage.addEventListener('click', (e) => {
   if(e.target.classList.contains("close-button")) {
-    alert.style.display = "none";
+    alertMessage.style.display = "none";
   }
 });
 
