@@ -90,14 +90,14 @@ h3 {
 }
 /* Grid Layout */
 
+
 .container {
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: 80px 65px 1fr;
   grid-template-areas:
-    "header header"
-    "nav nav"
-    "main main";
+    "header"
+    "nav"
+    "main";
 }
 
 .header {
@@ -116,8 +116,8 @@ h3 {
   .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 90px 1fr;
-    grid-template-rows: 80px 1fr;
+    grid-template-columns: 90px auto;
+    grid-template-rows: 80px auto;
     grid-template-areas:
       "header header"
       "nav main";
